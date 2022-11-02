@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Test</title>
+    <link href = "Assets/style.css" rel = "stylesheet">
+    <script src = "Assets/script.js"></script>
+    <title>Coding Test</title> 
 </head>
 <body>
-    <header class = title>
-        <h1>
-            Coding Test
-        </h1>
-        <h3>
-            Questions
-        </h3>
-    </header>
     <section class = "box">
         <div id = "questionBox" class = "hide"></div>
+            <div id = "question">Question</div>
+            <div id = "answer-button" class = "answer-button">
+                <button class = "choice-1"></button>
+                <button class = "choice-2"></button>
+                <button class = "choice-3"></button>
+                <button class = "choice-4"></button>
+            </div>
         <div class = "controls">
-            <button id = "start-button" class = "start-btn btn">Start Quiz</button>
-            <button id = "next-button" class = "nxt-btn btn">Next Question</button>
+            <button id = "start" class = "start btn">Start Quiz</button>
+            <button id = "next" class = "next btn">Next Question</button>
         </div>
     </section>
     <script src = "./Assets/script.js"></script>
