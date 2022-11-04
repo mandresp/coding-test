@@ -18,7 +18,7 @@ https://mandresp.github.io/coding-test/
 
 ## Screenshot of Website
 
-![Website Screenshot](./Assets/Images/Fullscreen%20Screenshot.png)
+![Website Screenshot](./Assets/Fullscreen%20Screenshot.png)
 
 ## Credits
 
