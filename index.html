@@ -11,7 +11,7 @@
 
 <body>
     <section class ="box">
-        <div id ="questionBox" class = "hide">
+        <div id ="questionBox" class ="hide">
             <h3 id ="question"></h3>
             <div id ="answer-buttons" class ="answer-buttons">
                 <button class ="choice-1"></button>
@@ -23,7 +23,18 @@
         <div class = "controls">
             <button id ="start" class ="start-btn">Start Quiz</button>
         </div>
-    </section>
+        <form id ="submit" class ="hide">
+            <input type ="text" name ="username" id ="username" plaecholder ="username">
+            <button type ="submit" class ="submit-btn" id ="submit-button" onclick="saveHighscore()">Submit</button>
+        </form>
+        <div id ="Top 5" class ="winners">
+            <h3>
+                Top 5 Scores
+            </h3>
+            <ol id="list">
+            </ol>
+        </div>
+    </section> 
     <script src ="./Assets/script.js"></script>
 </body>
 
