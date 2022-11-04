@@ -1,5 +1,10 @@
 * {
     font-family: 'Oswald',sans-serif;
+    box-sizing: border-box;
+    --main: #ded6c5;
+    --secondary: #683f34;
+    --tertiary: #fd605b;
+    --text: #1D2023;
 }
 
 body {
