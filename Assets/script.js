@@ -26,44 +26,19 @@ var questions = [
         answer: "4",
     },
     {
-        title: "What's 5 + 5?",
-        choices: ["5", "70", "10", "9"],
-        answer: "10",
-    },
-    {
-        title: "What's 7 + 5?",
-        choices: ["2", "67", "10", "12"],
-        answer: "12",
-    },
-    {
-        title: "What's 5 + 16?",
-        choices: ["22", "21", "23", "1,000"],
-        answer: "21",
-    },
-    {
-        title: "What's 23 + 16?",
-        choices: ["39", "399", "3.9", "94"],
-        answer: "39",
-    },
-    {
-        title: "What's 5 + 0?",
-        choices: ["0", "5", "6", "1,289"],
-        answer: "5",
-    },
-    {
-        title: "What's 26 + 13?",
-        choices: ["3.9", "399", "39", "94"],
-        answer: "39",
-    },
-    {
         title: "What's my name?",
-        choices: ["39", "399", "Jefferton Spanks", "94"],
-        answer: "Jefferton Spanks",
+        choices: ["Andre", "Andreas", "Andres", "Jefferton Spanks"],
+        answer: "Andres",
     },
     {
-        title: "Why is it yes way?",
-        choices: ["yerp", "yeerrp", "Porbably science", "Probably God"],
-        answer: "Porbably science",
+        title: "What are we studying?",
+        choices: ["Music", "Humanity", "10", "Coding"],
+        answer: "Coding",
+    },
+    {
+        title: "What's my go-to gym music?",
+        choices: ["Metal", "Caramella Girls", "Jazz", "Taylor Swift"],
+        answer: "Caramella Girls",
     },
     {
         title: "Why is it no way?",
@@ -92,7 +67,7 @@ function showQuestion(questions) {
 // This function adds the text content from the array to the title and each of the buttons
 
 function nextQuestion() {
-    if (currentIndex < 10) {
+    if (currentIndex < 5) {
         showQuestion(randomQuestion[currentIndex])
     } else {
         endGameScreen()
@@ -154,7 +129,7 @@ function reset(){
 // This resets everything once you decide to play again if you cancel it will do nothing
 
 function getScores() {
-    for (let i = 0, x = 0; i < 10, x < 5; i += 2, x++) {
+    for (let i = 0; i < 10; i += 2) {
         var entry = document.createElement('li');
         highScores.sort(function (a, b) {return a.score - b.score});
         entry.appendChild(document.createTextNode(highScores[i]));
